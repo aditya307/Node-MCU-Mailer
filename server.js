@@ -31,7 +31,7 @@ app.get('/sendmail', async (req, res) => {
   res.send('Mail Sent!!');
 });
 
-const PORT = 5000;
+const PORT = 5000 || process.env.PORT;
 
 app.listen(PORT, () => {
   console.log(`Server runnning on ${PORT}`);
