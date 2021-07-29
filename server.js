@@ -22,8 +22,8 @@ app.get('/', async (req, res) => {
 
 app.get('/sendmail', async (req, res) => {
   let mailInfo = await transporter.sendMail({
-    from: 'adi.2002.gwl@gmail.com',
-    to: 'sharmaajay2kuu@gmail.com',
+    from: 'akhlesh.6985@gmail.com',
+    to: 'adi.2002.gwl@gmail.com',
     subject: 'NODE MCU check',
     html: `<p><b>What If...?</b> ka trailer dekha tune?</p>`,
   });
